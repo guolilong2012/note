@@ -1,10 +1,10 @@
 #include <stdio.h>
-void say_hi();
+void say_hi(void);
 int main(int argc, const char *argv[])
 {
     say_hi();
     return 0;
 }
-void say_hi()
-{printf("hello");
+void say_hi(void)
+{printf("Hello World !");
 }
