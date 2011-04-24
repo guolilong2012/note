@@ -1,10 +1,10 @@
-##Hello World
+##Hello World !
 
-###my code:
+###my code is:
 
 main()
 
-{ printf("hello world");
+{ printf("hello world !");
 
 }
 
