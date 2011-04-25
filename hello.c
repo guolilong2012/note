@@ -1,6 +1,6 @@
 #include <stdio.h>
 void say_hi(void);
-int main(int argc, const char *argv[])
+int main(void)
 {
     say_hi();
     return 0;
