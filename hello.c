@@ -1,6 +1,6 @@
 #include <stdio.h>
 void say_hi(void);
-int main(void)
+int main()
 {
     say_hi();
     return 0;
