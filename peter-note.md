@@ -31,6 +31,13 @@ __Ctr-o__: to go back
 
     sudo apt-get install git-core 
     sudo apt-get install tig
+## .gitconfig
+    [user]
+        name = Peter Wang
+        email = happypeter1983@gmail.com
+    [alias]
+        ci = commit -a -m
+        throwh = reset --hard HEAD^
 ## screencast
 
     http://happypeter.org/happycasts/happygit-zh/git_start.ogv
