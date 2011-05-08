@@ -32,20 +32,33 @@ __Ctr-o__: to go back
     sudo apt-get install git-core 
     sudo apt-get install tig
 ## .gitconfig
-    [user]
-        name = Peter Wang
-        email = happypeter1983@gmail.com
-    [alias]
-        ci = commit -a -m
-        throwh = reset --hard HEAD^
+[user]
+    name = Peter Wang
+    email = happypeter1983@gmail.com
+[core]
+    editor = vim
+[alias]
+    ci = commit -a -v
+    co = checkout
+    st = status
+    br = branch
+    throw = reset --hard HEAD
+    throwh = reset --hard HEAD^
+[color]
+    ui = true
+[commit]
+    template = ./.commit-template
+[push]
+    default = current
+
 ## screencast
 
-    http://happypeter.org/happycasts/happygit-zh/git_start.ogv
+http://happypeter.org/happycasts/happygit-zh/git_start.ogv
 
 
 ## github page
 
-    http://pages.github.com/
+http://pages.github.com/
 
 follow the above link if you want your own Homepage, sth like
 <happypeter.github.com>
@@ -54,10 +67,10 @@ and to know more about html, check <http://www.w3schools.com/html/>
 
 ### example index.html
 
-    <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>LGCB</title>
-    </head>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>LGCB</title>
+</head>
 
 
 ## path
@@ -67,9 +80,9 @@ rel path: starts with `.`
 
 ## install a package
 
-    sudo apt-get install packagename
+sudo apt-get install packagename
 
-    sudo apt-get update
+sudo apt-get update
 ## shortcuts
 
 __Ctr-l__ : clear the screen
