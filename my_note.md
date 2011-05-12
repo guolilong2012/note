@@ -7,6 +7,7 @@
     $:vim file
     $:git add file
     $:git commit -a -m "fun"
+    $:tig
 ###github key
     $:cd
     $:ssh-keygen
