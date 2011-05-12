@@ -1,14 +1,36 @@
-##github key
-    $:cd
-    $:ssh-keygen
-    $:cd .ssh
-    $:vim id_rsa.pub
 ##git
+
+###git
     $:mkdir project
     $:git init
     $:vim file
     $:git add file
     $:git commit -a -m "fun"
+###github key
+    $:cd
+    $:ssh-keygen
+    $:cd .ssh
+    $:vim id_rsa.pub
+###vim .gitconfig
+    [user]
+        name = Peter Wang
+        email = happypeter1983@gmail.com
+    [core]
+        editor = vim
+    [alias]
+        ci = commit -a -v
+        co = checkout
+        st = status
+        br = branch
+        throw = reset --hard HEAD
+        throwh = reset --hard HEAD^
+    [color]
+        ui = true
+    [commit]
+        template = ./.commit-template
+    [push]
+        default = current
+
 ##Vim Conf Share
 ###if you want to have my vim configuration, do these:
     cd                       #goto your $HOME
