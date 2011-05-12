@@ -2,6 +2,7 @@
 
 ###git
     $:mkdir project
+    $:cd project
     $:git init
     $:vim file
     $:git add file
@@ -11,10 +12,13 @@
     $:ssh-keygen
     $:cd .ssh
     $:vim id_rsa.pub
-###vim .gitconfig
+### Git Conf 
+    $:cd
+    $:vim .gitconfig
+
     [user]
-        name = Peter Wang
-        email = happypeter1983@gmail.com
+        name = Guo lilong
+        email = guolilong2012@sohu.com
     [core]
         editor = vim
     [alias]
