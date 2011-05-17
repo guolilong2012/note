@@ -1,3 +1,6 @@
+##install
+    $:sudo apt-get install package_name
+    $:sudo apt-get update
 ##git
 
 ###git
