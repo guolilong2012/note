@@ -48,6 +48,11 @@
     cd .vim/
     vim README              # check the readme to know more
 
+##文件编码转换
+    如果你只是想查看其它编码格式的文件或者想解决用Vim查看文件乱码的问题，那么你可以在
+    ~/.vimrc（在/etc目录下面） 文件中添加以下内容：
+    set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
+
 ##markdown
     $:vim file.md
     $:markdown file.md > file.html
