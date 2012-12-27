@@ -3,6 +3,11 @@
     $:sudo apt-get update
 ##git
 
+###install git
+    version>=1.7.10
+    $:sudo apt-add-repository ppa:git-core/ppa
+    $:sudo apt-get update
+    $:sudo apt-get install git
 ###git
     $:mkdir project
     $:cd project
