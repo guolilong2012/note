@@ -58,7 +58,3 @@
 ##markdown
     $:vim file.md
     $:markdown file.md > file.html
-
-##sqlite3
-    $:sudo apt-get install sqlite3
-    $:sudo apt-get install libsqlite3-dev
