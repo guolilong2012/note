@@ -1,5 +1,8 @@
 ##git
 
+###git help
+    help.github.com
+
 ###install git
     version>=1.7.10
     $:sudo apt-add-repository ppa:git-core/ppa
