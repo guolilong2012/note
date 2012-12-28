@@ -2,6 +2,8 @@
 
 ###git help
     help.github.com
+###git with no username/password
+    $:git config --global credential.helper cache
 
 ###install git
     version>=1.7.10
