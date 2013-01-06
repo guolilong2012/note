@@ -1,10 +1,8 @@
 ##git
-
 ###git help
     help.github.com
 ###git without username/password
     $:git config --global credential.helper cache
-
 ###install git
     version>=1.7.10
     $:sudo apt-add-repository ppa:git-core/ppa
@@ -63,3 +61,12 @@
 ##markdown
     $:vim file.md
     $:markdown file.md > file.html
+
+## Linux commands
+### pgrof
+gcc -pg main.c
+./a.out
+pgrof a.out > pgrof.txt
+
+### find
+find / -type f | xargs grep key
