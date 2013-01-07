@@ -1,14 +1,31 @@
-##git
-###git help
+## Linux commands
+### pgrof
+    $:gcc -pg main.c
+    $:./a.out
+    $:pgrof a.out > pgrof.txt
+### find
+    $:find / -type f | xargs grep key
+
+## Detecting Memory Leaks in Kernel
+    $:make menuconfig
+    kernel hacking---> Kernel memory leak detector
+                  ---> Compiler the kernel with debug info
+    $:mount -t debugfs nodev /sys/kernel/debug/kmemleak
+    $:echo scan > /sys/kernel/debug/kmemleak
+    $:echo clear > /sys/kernel/debug/kmemleak
+    $:cat /sys/kernel/debug/kmemleak
+
+## Git
+### git help
     help.github.com
-###git without username/password
+### git without username/password
     $:git config --global credential.helper cache
-###install git
+### install git
     version>=1.7.10
     $:sudo apt-add-repository ppa:git-core/ppa
     $:sudo apt-get update
     $:sudo apt-get install git
-###git
+### git
     $:mkdir project
     $:cd project
     $:git init
@@ -16,12 +33,12 @@
     $:git add file
     $:git commit -a -m "fun"
     $:tig
-###github key
+### github key
     $:cd
     $:ssh-keygen
     $:cd .ssh
     $:vim id_rsa.pub
-### Git Conf 
+### git conf 
     $:cd
     $:vim .gitconfig
 
@@ -44,8 +61,8 @@
     [push]
         default = current
 
-##Vim Conf Share
-###if you want to have my vim configuration, do these:
+## Vim Conf Share
+### if you want to have my vim configuration, do these:
     cd                       #goto your $HOME
     git clone git@github.com:guolilong2012/guolilong-vim.git
     rm -rf .vim              # rm the old .vim
@@ -53,20 +70,11 @@
     cd .vim/
     vim README              # check the readme to know more
 
-##文件编码转换
+## 文件编码转换
     如果你只是想查看其它编码格式的文件或者想解决用Vim查看文件乱码的问题，那么你可以在
     ~/.vimrc（在/etc目录下面） 文件中添加以下内容：
     set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
 
-##markdown
+## Markdown
     $:vim file.md
     $:markdown file.md > file.html
-
-## Linux commands
-### pgrof
-    gcc -pg main.c
-    ./a.out
-    pgrof a.out > pgrof.txt
-
-### find
-    find / -type f | xargs grep key
