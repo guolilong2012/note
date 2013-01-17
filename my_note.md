@@ -16,15 +16,12 @@
     $:cat /sys/kernel/debug/kmemleak
 
 ## Git
+### git install
+    $:apt-get install git(git-core)
 ### git help
     help.github.com
 ### git without username/password
     $:git config --global credential.helper cache
-### install git
-    version>=1.7.10
-    $:sudo apt-add-repository ppa:git-core/ppa
-    $:sudo apt-get update
-    $:sudo apt-get install git
 ### git
     $:mkdir project
     $:cd project
