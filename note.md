@@ -57,25 +57,7 @@
         template = ./.commit-template
     [push]
         default = current
-[user]
-        name = Guo Lilong
-        email = guolilong2012@sohu.com
-[core]
-        editor = vim
-[alias]
-        ci = commit -a -m
-        co = checkout
-        st = status
-        br = branch
-        throw = reset --hard HEAD
-        throwh = reset --hard HEAD^
-[color]
-        ui = true
-[commit]
-        template = ./.commit-template
-[push]
-        default = current
-[credential]
+    [credential]
         helper = cache --timeout=360000
 
 ## Vim Conf Share
