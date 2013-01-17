@@ -21,7 +21,7 @@
 ### git help
     help.github.com
 ### git without username/password
-    $:git config --global credential.helper cache
+    $:git config --global credential.helper 'cache --timeout=3600'
 ### git
     $:mkdir project
     $:cd project
