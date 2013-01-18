@@ -1,6 +1,5 @@
 ## Linux commands
 ### pgrof
-
     $:gcc -pg main.c
     $:./a.out
     $:pgrof a.out > pgrof.txt
