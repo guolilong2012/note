@@ -75,3 +75,23 @@
 ## Markdown
     $:vim file.md
     $:markdown file.md > file.html
+
+##Local yum(redhat 6.3)
+    $:mkdir /media/cdiso
+    $:mount -o loop xxx.iso /media/cdiso
+    $:mv /etc/yum.resp.d/rhel-source.repo /etc/yum.resp.d/rhel-source.repo.bak
+    $:vim /etc/yum.resp.d/rhel-source.repo
+        [rhel-source]
+        name=yum local
+        baseurl=file:///media/redhat
+        gpgcheck=0
+        gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+        [rhel-source-beta]
+        name=yum local
+        baseurl=file:///media/redhat
+        enabled=1
+        gpgcheck=0
+        gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta,file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+    $:yum clean all
+    $:yum list
+    $:yum -y install gcc
