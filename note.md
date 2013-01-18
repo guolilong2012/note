@@ -20,9 +20,7 @@
     $:apt-get install git(git-core)
 ### git help
     help.github.com
-### git without username/password
-    $:git config --global credential.helper 'cache --timeout=3600'
-### git
+### git use
     $:mkdir project
     $:cd project
     $:git init
@@ -45,7 +43,7 @@
     [core]
         editor = vim
     [alias]
-        ci = commit -a -v
+        ci = commit -a -m
         co = checkout
         st = status
         br = branch
