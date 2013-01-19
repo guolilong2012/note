@@ -3,9 +3,10 @@
     $:gcc -pg main.c
     $:./a.out
     $:pgrof a.out > pgrof.txt
-
 ### find
     $:find / -type f | xargs grep key
+### rename
+    $:rename 's/.so.1/.so/' ./*
 
 ## Detecting Memory Leaks in Kernel
     $:make menuconfig
