@@ -7,6 +7,8 @@
     $:find / -type f | xargs grep key
 ### rename
     $:rename 's/.so.1/.so/' ./*
+### openssh-server
+    $:apt-get install openssh-server
 
 ## Detecting Memory Leaks in Kernel
     $:make menuconfig
