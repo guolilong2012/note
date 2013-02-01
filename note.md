@@ -9,6 +9,15 @@
     $:rename 's/.so.1/.so/' ./*
 ### openssh-server
     $:apt-get install openssh-server
+### nfs
+    $:apt-get install nfs-kernel-server
+    $:apt-get install portmap nfs-common
+    $:vim /etc/exports
+       /root/test  *(rw,sync,no_root_squash)
+    $:/etc/init.d/nfs-kernel-server restart
+    $:/etc/init.d/portmap restart
+    $:showmount -e
+    $:mount -t nfs -o nolock 192.168.1.111:/root/test/tiny6410 /mnt
 
 ## Detecting Memory Leaks in Kernel
     $:make menuconfig
