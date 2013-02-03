@@ -18,6 +18,10 @@
     $:/etc/init.d/portmap restart
     $:showmount -e
     $:mount -t nfs -o nolock 192.168.1.111:/root/test/tiny6410 /mnt
+### file ldd readelf
+    $:file app
+    $:ldd app
+    $:readelf -a app | grep Shared
 
 ## Detecting Memory Leaks in Kernel
     $:make menuconfig
