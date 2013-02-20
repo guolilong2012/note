@@ -40,7 +40,7 @@
     $:sudo apt-getinstall smbfs
     $:sudo apt-get install system-config-samba
     $:sudo system-config-samba
-    $:smbpasswd -a root
+    $:smbpasswd -a user
     $:/etc/init.d/smbd restart
     \\192.168.1.28\path
 
