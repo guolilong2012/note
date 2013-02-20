@@ -32,6 +32,18 @@
     $:echo clear > /sys/kernel/debug/kmemleak
     $:cat /sys/kernel/debug/kmemleak
 
+## Samba on Ubuntu-10.04
+    $:sudo apt-get install rcconf
+    $:sudo apt-get install ufw
+    $:ufw disable
+    $:sudo apt-getinstall samba
+    $:sudo apt-getinstall smbfs
+    $:sudo apt-get install system-config-samba
+    $:sudo system-config-samba
+    $:smbpasswd -a root
+    $:/etc/init.d/smbd restart
+    \\192.168.1.28\path
+
 ## Git
 ### git install
     $:apt-get install git(git-core)
