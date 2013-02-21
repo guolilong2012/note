@@ -23,6 +23,10 @@
     $:ldd app
     $:readelf -a app | grep Shared
 
+## arm-linux kernel
+    $:make ARCH=arm menuconfig
+    $:make ARCH=arm CROSS_COMPILE=arm-linux-
+
 ## Detecting Memory Leaks in Kernel
     $:make menuconfig
     kernel hacking---> Kernel memory leak detector
