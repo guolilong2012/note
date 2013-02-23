@@ -48,6 +48,9 @@
     $:/etc/init.d/smbd restart
     \\192.168.1.28\path
 
+## rename eth1 to eth0
+    $:rm /etc/udev/rules.d/70-persistent-net.rules
+
 ## Git
 ### git install
     $:apt-get install git(git-core)
