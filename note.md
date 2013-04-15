@@ -131,3 +131,11 @@
     $:yum clean all
     $:yum list
     $:yum -y install gcc
+
+##Ubuntu10.04 install rapidsvn
+    download rapidsvn.tar.gz
+    $:apt-get install libapr1-dev
+    $:apt-get install libaprutil1-dev
+    $:apt-get install libsvn-dev
+    $:apt-get install libwxgtk2.8-dev
+    $:apt-get install libsvncpp-dev
