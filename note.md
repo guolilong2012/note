@@ -116,7 +116,7 @@
     $:vim file.md
     $:markdown file.md > file.html
 
-##Local yum(redhat 6.3)
+## Local yum(redhat 6.3)
     $:mkdir /media/cdiso
     $:mount -o loop xxx.iso /media/cdiso
     $:mv /etc/yum.resp.d/rhel-source.repo /etc/yum.resp.d/rhel-source.repo.bak
@@ -136,7 +136,7 @@
     $:yum list
     $:yum -y install gcc
 
-##Ubuntu10.04 install rapidsvn
+## Ubuntu10.04 install rapidsvn
     download rapidsvn.tar.gz
     $:apt-get install libapr1-dev
     $:apt-get install libaprutil1-dev
