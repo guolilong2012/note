@@ -54,6 +54,10 @@
 ## Git
 ### git install
     $:apt-get install git(git-core)
+### Ubuntu10.04 install git
+    $:sudo apt-add-repository ppa:git-core/ppa 
+    $:sudo apt-get update 
+    $:sudo apt-get install git 
 ### git help
     help.github.com
 ### git use
