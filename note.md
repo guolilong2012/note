@@ -143,3 +143,14 @@
     $:apt-get install libsvn-dev
     $:apt-get install libwxgtk2.8-dev
     $:apt-get install libsvncpp-dev
+
+## network
+### /etc/network/interfaces
+    aut0 eth0
+    iface eth0 inet static
+    address 172.18.200.22
+    netmask 255.255.255.0
+    broadcast 172.18.200.255
+    gateway 172.18.200.1
+### /etc/init.d/networking restart
+### rm /etc/udev/rules.d/70-persistent-net.rules
