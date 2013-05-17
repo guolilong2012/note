@@ -146,7 +146,7 @@
 
 ## network
 ### /etc/network/interfaces
-    aut0 eth0
+    auto eth0
     iface eth0 inet static
     address 172.18.200.22
     netmask 255.255.255.0
