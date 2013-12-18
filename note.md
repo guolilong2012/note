@@ -154,3 +154,20 @@
     gateway 172.18.200.1
 ### /etc/init.d/networking restart
 ### rm /etc/udev/rules.d/70-persistent-net.rules
+
+## Local apt-get (ubuntu)
+    $:sudo mkdir /media/cdrom
+    $:sudo modprobe loop
+    $:sudo mount ubuntu-10.04-dvd-i386.iso /media/cdrom/ -t iso 9660 -o loop
+    $:sudo vi /etc/apt/sources.list
+    	#10.04
+    	deb file:///media/cdrom lucid main
+    	deb file:///media/cdrom lucid restricted
+    	#10.10
+    	deb file:///media/cdrom maverick main
+    	deb file:///media/cdrom maverick restricted
+    	#11.04
+    	deb file:///media/cdrom natty main
+    	deb file:///media/cdrom natty restricted
+    $:sudo apt-get update
+    $:sudo apt-get install vim
